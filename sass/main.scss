@@ -1,3 +1,42 @@
-.hidden{
-    display: none;
+
+/* hover effect*/
+
+ul li a{
+    color: #f15a24;
+    font-weight: bold;
+    transition: .2s;
+    text-transform: uppercase;
+    
+}
+ul li a:hover{
+    color: black;
+}
+
+// Welcome section
+#welcome{
+    margin-top: 50px;
+}
+#welcomeText{
+    margin: 0px 0px 100px 0px;    //top-right-bottom-left
+    font-size: 25px;
+}
+
+// main Image
+h2, h3, h4{
+    font-weight: bold;
+    margin: 20px 0px 20px 0px;    //top-right-bottom-left
+}
+/* other Destination */
+#otherDest div img{
+margin-bottom: 20px;
+transition: .2s;
+}
+
+#otherDest div img:hover{
+    opacity: 0.8;
+    }
+.otherDest{
+    border-bottom: 5px solid #f15a24;
+    margin-bottom: 50px;
+
 }
