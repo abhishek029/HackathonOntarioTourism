@@ -7,12 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.2/vue-router.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/foundation.min.js.map"></script>
 </head>
 <body>
-    <h1 class="row">Hello</h1>
-    <script src="main.js"></script>
+    <h1 class="row hidden">Ontario Tourism</h1>
+    <header>
+        
+    </header>
+
+    <section id="promo">
+
+    </section>
+    
+    <section id="signUp">
+        <form method="POST" action="admin/sign-up.php" class="row">
+            <h2 class="columns text-center">Subscribe Here</h2>
+            <input type="text" class="columns" placeholder="First Name" required name="first_name">
+            <input type="text" class="columns" placeholder="Last Name" required name="last_name">
+            <input type="email" class="columns" placeholder="abc@abc" required name="email">
+            <input type="text" class="columns" placeholder="country name" name="country">
+            <button name="submit" class="columns button">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
