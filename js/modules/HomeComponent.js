@@ -1,9 +1,7 @@
-
-(() => {
-    const HomePageComponent = { 
-        template: `
-        
-        <!-- Promo section -->
+export default{
+    template:`
+    
+    <!-- Promo section -->
     <section id="PromoComponent">
         <section id="video">
             <video class="small-12"controls>
@@ -48,53 +46,5 @@
         
         </section>
     </section>
-        `
-    }
-    
-    const SignupComponent = {
-        template: `<section id="signUp">
-        <form method="POST" action="admin/sign-up.php" class="row">
-            <h2 class="columns text-center">Subscribe Here</h2>
-            <input type="text" class="columns" placeholder="First Name" required name="first_name">
-            <input type="text" class="columns" placeholder="Last Name" required name="last_name">
-            <input type="email" class="columns" placeholder="abc@abc" required name="email">
-            <input type="text" class="columns" placeholder="country name" name="country">
-            <button name="submit" class="columns button">Subscribe</button>
-        </form>
-    </section>`
-    }
-    const ErrorPageComponent = {
-        template: "<h2>This is Error page</h2>"
-    }
-
-    const routes =[
-        { path: '/', name: 'home', component:HomePageComponent},
-        { path: '/contact', name: 'contact', component:SignupComponent},
-        { path: '/*', name: 'error', component:ErrorPageComponent},
-    ]
-    const router = new VueRouter({
-        routes
-    });
-    //Vue instance
-    const vn = new Vue({
-        el: "#app",
-        data:{
-            testmessage: "sup"
-        },
-        methods:{
-            calledOnParent(){
-                console.log("this method is from vue");
-            }
-        },
-        created: function(){
-            console.log("this is vue created");
-        },
-        components:{
-            'homepagecomponent' : HomePageComponent,
-            'signupcomponent' :SignupComponent,
-            'errorpagecomponent' : ErrorPageComponent
-        },
-        
-        router
-    })
-})();
+    `,
+}
