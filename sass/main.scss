@@ -1,14 +1,14 @@
 
 /* hover effect*/
 
-ul li a{
+.links{
     color: #f15a24;
     font-weight: bold;
     transition: .2s;
     text-transform: uppercase;
     
 }
-ul li a:hover{
+.links:hover{
     color: black;
 }
 
