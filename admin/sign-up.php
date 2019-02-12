@@ -10,6 +10,8 @@ include('connect.php');
             $lastname = $_POST["last_name"];
             $email = $_POST["email"];
             $country = $_POST["country"];
+            // set time zone
+			date_default_timezone_set("America/New_York");
             $last_update = date("Y/m/d");
         }
 
