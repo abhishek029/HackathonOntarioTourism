@@ -50,7 +50,7 @@
     const SignupComponent = {
         template: `<section id="signUp">
         <form method="POST" action="admin/sign-up.php" class="row">
-            <h2 class="columns text-center">Subscribe Here</h2>
+            <h2 class="columns otherDest small-offset-3 small-6 text-center">Subscribe Here</h2>
             <input type="text" class="columns" placeholder="First Name" required name="first_name">
             <input type="text" class="columns" placeholder="Last Name" required name="last_name">
             <input type="email" class="columns" placeholder="abc@abc" required name="email">
@@ -61,7 +61,7 @@
     }
     const VideoComponent = {
         template: ` <section id="video">
-            <video class="small-12" height="100vh" controls>
+            <video class="small-12" controls>
             <source src="video/promo.mp4">
             </video>
         </section>
