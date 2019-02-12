@@ -12,7 +12,7 @@ One page app used to increase tourism in Ontario using Components and routers. D
 
 ## Development Team
 
-* **Ahbi Patel** - *Developer* 
+* **Abhishek Patel** - *Developer* 
 * **Jinkal Patel** - *Developer*
 * **Main Shalabi** - *PM*
 * **Connor Herring** - *Motion*
