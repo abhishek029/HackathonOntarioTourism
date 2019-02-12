@@ -8,11 +8,33 @@
 
     function sendUpdatedEmail($firstname,$lastname,$email){
         echo "Updated";
-        // exit;
+        $name = $firstname." ".$lastname;
+		$to = $email;
+		$subject = "Account Updated";
+        $message = 'Message Body: Updated name: '.$firstname.$lastname;
+		$headers = "From: noreply@ABHIPATEL.ca\r\n";
+		
+        
+		if(mail($to, $subject, $message, $headers)){
+            redirect_to('../index.html');
+        }
+        
+
+        exit;
     }
 
     function sendCreatedEmail($firstname,$lastname,$email){
         echo "Created";
-        // exit;
+        $name = $firstname." ".$lastname;
+		$to = $email;
+		$subject = "Account Created";
+        $message = 'Message Body: Account name: '.$firstname.$lastname;
+		$headers = "From: noreply@ABHIPATEL.ca\r\n";
+		
+        
+		if(mail($to, $subject, $message, $headers)){
+            redirect_to('../index.html');
+		}
+        exit;
     }
 ?>

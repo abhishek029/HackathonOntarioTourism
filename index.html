@@ -16,8 +16,11 @@
             <div id="logo" class="large-4 large-offset-4 text-center"><img src="images/logo.svg" alt="logo"></div>  
         </header>
         <main id="app">
-                <router-link :to="{ path: '/'}" class="links">Home</router-link>
-                <router-link :to="{ path: 'contact'}" class="links">Plan Your Trip</router-link>
+            <ul class="menu row expanded">
+                <li class="links small-2"><router-link :to="{ path: '/'}" class="links">Home</router-link></li>
+                <li class="links small-2"><router-link :to="{ path: 'video'}" class="links">Video</router-link></li>
+                <li class="links small-2"><router-link :to="{ path: 'contact'}" class="links">Plan Your Trip</router-link></li>
+            </ul>
                 <router-view></router-view>
         </main>
 
