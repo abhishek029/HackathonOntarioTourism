@@ -5,11 +5,7 @@
         
         <!-- Promo section -->
     <section id="PromoComponent">
-        <section id="video">
-            <video class="small-12"controls>
-                <source src="video/promo.mp4">
-            </video>
-        </section>
+       
     
         <section id="welcome" class="row">
             <h2 class="columns otherDest small-offset-3 small-6 text-center">Welcome to Ontario</h2>
@@ -63,6 +59,14 @@
         </form>
     </section>`
     }
+    const VideoComponent = {
+        template: ` <section id="video">
+            <video class="small-12" height="100vh" controls>
+            <source src="video/promo.mp4">
+            </video>
+        </section>
+    `
+    }
     const ErrorPageComponent = {
         template: "<h2>This is Error page</h2>"
     }
@@ -70,6 +74,7 @@
     const routes =[
         { path: '/', name: 'home', component:HomePageComponent},
         { path: '/contact', name: 'contact', component:SignupComponent},
+        { path: '/video', name: 'video', component:VideoComponent},
         { path: '/*', name: 'error', component:ErrorPageComponent},
     ]
     const router = new VueRouter({
@@ -92,6 +97,7 @@
         components:{
             'homepagecomponent' : HomePageComponent,
             'signupcomponent' :SignupComponent,
+            'videocomponent' :VideoComponent,
             'errorpagecomponent' : ErrorPageComponent
         },
         

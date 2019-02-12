@@ -46,7 +46,8 @@ include('connect.php');
                 );
 
                 // created this functions in functions.php
-                sendUpdatedEmail($firstname,$lastname,$email);
+                // function is not working because site is not live ans gives smtp error
+                // sendUpdatedEmail($firstname,$lastname,$email);
                 redirect_to('../index.html');
                 
         }else{
@@ -67,8 +68,9 @@ include('connect.php');
                  )
              );
             
-             // created this functions in functions.php
-            sendCreatedEmail($firstname,$lastname,$email);
+            // created this functions in functions.php
+            // function is not working because site is not live ans gives smtp error
+            // sendCreatedEmail($firstname,$lastname,$email);
             redirect_to('../index.html');
         }
     }
